@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>シンプルタスク管理アプリ</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>タスク管理アプリ</h1>
+        </header>
+
+        <section class="add-task">
+            <input type="text" id="taskInput" placeholder="新しいタスクを入力...">
+            <button id="addTask">追加</button>
+        </section>
+
+        <section class="filters">
+            <button data-filter="all">すべて</button>
+            <button data-filter="active">未完了</button>
+            <button data-filter="completed">完了</button>
+        </section>
+
+        <section class="sort-options">
+            <label>並べ替え:</label>
+            <select id="sortBy">
+                <option value="date-asc">追加日（古い順）</option>
+                <option value="date-desc">追加日（新しい順）</option>
+            </select>
+        </section>
+
+        <section class="task-list">
+            <ul id="tasks"></ul>
+        </section>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
