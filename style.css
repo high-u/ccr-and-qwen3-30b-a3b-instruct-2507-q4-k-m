@@ -81,6 +81,7 @@ button:hover {
     font-size: 0.9rem;
     border: 1px solid #ccc;
     background-color: #fff;
+    color: #000; /* Ensure black text for unselected buttons */
     transition: all 0.3s ease;
 }
 
