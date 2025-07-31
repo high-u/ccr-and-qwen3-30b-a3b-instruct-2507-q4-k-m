@@ -17,13 +17,14 @@ body {
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
+    margin-top: 100px; /* Added to account for fixed header height */
 }
 
 /* Header styles */
 header {
     background-color: #000;
     color: white;
-    padding: 20px 0;
+    padding: 8px 0; /* Reduced vertical padding to half of current amount */
     text-align: center;
     width: 100%;
     position: fixed;
@@ -34,9 +35,11 @@ header {
 }
 
 h1 {
-    font-size: 1.5rem; /* Adjusted to match other text sizes */
+    font-size: 1.2rem; /* Reduced size */
     font-weight: 600;
-    letter-spacing: -0.3px;
+    letter-spacing: -0.2px;
+    padding-top: 8px; /* Reduced to half of current amount */
+    padding-bottom: 8px; /* Reduced to half of current amount */
 }
 
 /* Add task section */
